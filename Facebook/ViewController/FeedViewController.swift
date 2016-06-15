@@ -12,6 +12,12 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     // MARK: - Properties
     
+    let zoomImageView = UIImageView()
+    var statusImageView: UIImageView?
+    let blackBackgroundView = UIView()
+    let navigationBarCoverView = UIView()
+    let tabBarCoverView = UIView()
+    
     var posts = [Post]()
     
     
@@ -41,21 +47,16 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
                         post.setValuesForKeysWithDictionary(postDictionary)
                         self.posts.append(post)
                     }
-                    
                 }
                 
             } catch let err {
                 print(err)
             }
-            
         }
-
-        
     }
     
     func setupViews() {
         navigationItem.title = "News Feed"
-
         
         self.collectionView?.backgroundColor = UIColor(white: 0.95, alpha: 1)
         self.collectionView?.alwaysBounceVertical = true
@@ -102,6 +103,7 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     
     // MARK: - UICollectionViewDelegateFlowLayout
+    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         if let statusText = posts[indexPath.item].statusText {
@@ -117,11 +119,7 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     
-    let zoomImageView = UIImageView()
-    var statusImageView: UIImageView?
-    let blackBackgroundView = UIView()
-    let navigationBarCoverView = UIView()
-    let tabBarCoverView = UIView()
+    // MARK: - animateImageView
     
     func animateImageView(statusImageView: UIImageView) {
         self.statusImageView = statusImageView

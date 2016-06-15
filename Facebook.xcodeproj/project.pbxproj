@@ -13,7 +13,6 @@
 		4826653D1D102ECF009D3441 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4826653C1D102ECF009D3441 /* BaseTableViewCell.swift */; };
 		4826653F1D10349B009D3441 /* RequestHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4826653E1D10349B009D3441 /* RequestHeaderCell.swift */; };
 		482EB5F91D0F491C000210D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482EB5F81D0F491C000210D7 /* AppDelegate.swift */; };
-		482EB5FB1D0F491C000210D7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482EB5FA1D0F491C000210D7 /* FeedViewController.swift */; };
 		482EB5FE1D0F491D000210D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482EB5FC1D0F491D000210D7 /* Main.storyboard */; };
 		482EB6001D0F491D000210D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482EB5FF1D0F491D000210D7 /* Assets.xcassets */; };
 		482EB6031D0F491D000210D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482EB6011D0F491D000210D7 /* LaunchScreen.storyboard */; };
@@ -25,6 +24,8 @@
 		482EB6351D0F4F82000210D7 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482EB6341D0F4F82000210D7 /* FeedCollectionViewCell.swift */; };
 		4863E1681D0FF0E40006B91E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4863E1671D0FF0E40006B91E /* Post.swift */; };
 		488870961D11A8BA00CEB694 /* SafeJSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488870951D11A8BA00CEB694 /* SafeJSONObject.swift */; };
+		488870DA1D11CD0B00CEB694 /* CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488870D91D11CD0B00CEB694 /* CacheImage.swift */; };
+		488870DC1D11CDA000CEB694 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488870DB1D11CDA000CEB694 /* FeedViewController.swift */; };
 		48EF79131D10A20E00FF17E0 /* all_posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 48EF79121D10A20E00FF17E0 /* all_posts.json */; };
 		48EF79151D10A49600FF17E0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF79141D10A49600FF17E0 /* Location.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +55,6 @@
 		4826653E1D10349B009D3441 /* RequestHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestHeaderCell.swift; path = View/RequestHeaderCell.swift; sourceTree = "<group>"; };
 		482EB5F51D0F491C000210D7 /* Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		482EB5F81D0F491C000210D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		482EB5FA1D0F491C000210D7 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		482EB5FD1D0F491D000210D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		482EB5FF1D0F491D000210D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		482EB6021D0F491D000210D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +71,8 @@
 		482EB6341D0F4F82000210D7 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCollectionViewCell.swift; path = View/FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		4863E1671D0FF0E40006B91E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Model/Post.swift; sourceTree = "<group>"; };
 		488870951D11A8BA00CEB694 /* SafeJSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafeJSONObject.swift; path = Network/SafeJSONObject.swift; sourceTree = "<group>"; };
+		488870D91D11CD0B00CEB694 /* CacheImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CacheImage.swift; path = Model/CacheImage.swift; sourceTree = "<group>"; };
+		488870DB1D11CDA000CEB694 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ViewController/FeedViewController.swift; sourceTree = "<group>"; };
 		48EF79121D10A20E00FF17E0 /* all_posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = all_posts.json; path = "Supporting Files/JSON/all_posts.json"; sourceTree = "<group>"; };
 		48EF79141D10A49600FF17E0 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,8 +156,8 @@
 		482EB6261D0F4AF0000210D7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				482EB5FA1D0F491C000210D7 /* FeedViewController.swift */,
 				482665361D102275009D3441 /* GeneralTabBarController.swift */,
+				488870DB1D11CDA000CEB694 /* FeedViewController.swift */,
 				482665381D102D5D009D3441 /* RequestsViewController.swift */,
 			);
 			name = ViewController;
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				488870951D11A8BA00CEB694 /* SafeJSONObject.swift */,
+				488870D91D11CD0B00CEB694 /* CacheImage.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -369,13 +372,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488870DA1D11CD0B00CEB694 /* CacheImage.swift in Sources */,
 				482EB6331D0F4F25000210D7 /* BaseCollectionViewCell.swift in Sources */,
-				482EB5FB1D0F491C000210D7 /* FeedViewController.swift in Sources */,
 				482EB6351D0F4F82000210D7 /* FeedCollectionViewCell.swift in Sources */,
 				482EB5F91D0F491C000210D7 /* AppDelegate.swift in Sources */,
 				4826653B1D102E4A009D3441 /* RequestTabeViewCell.swift in Sources */,
 				4826653D1D102ECF009D3441 /* BaseTableViewCell.swift in Sources */,
 				48EF79151D10A49600FF17E0 /* Location.swift in Sources */,
+				488870DC1D11CDA000CEB694 /* FeedViewController.swift in Sources */,
 				482665391D102D5D009D3441 /* RequestsViewController.swift in Sources */,
 				482EB62B1D0F4B19000210D7 /* UIKit Extensions.swift in Sources */,
 				4826653F1D10349B009D3441 /* RequestHeaderCell.swift in Sources */,

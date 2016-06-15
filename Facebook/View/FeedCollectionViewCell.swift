@@ -8,57 +8,6 @@
 
 import UIKit
 
-//var imageCache = [String: UIImage]()
-//var imageCache = NSCache()
-//
-//
-//
-//if let statusImageUrl = post?.statusImageURL {
-//    
-//    if let image = imageCache.objectForKey(statusImageUrl) as? UIImage {
-//        statusImageView.image = image
-//        
-//    } else {
-//        NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: statusImageUrl)!, completionHandler: { (data, response, error) in
-//            if error != nil {
-//                print(error)
-//            }
-//            
-//            let image = UIImage(data: data!)
-//            imageCache.setObject(image!, forKey: self.statusImageView)
-//            
-//            dispatch_async(dispatch_get_main_queue(), {
-//                self.statusImageView.image = image
-//                self.loader.stopAnimating()
-//            })
-//            
-//            
-//        }).resume()
-//    }
-//}
-
-
-
-//if let statusImageUrl = post?.statusImageURL {
-//    
-//    NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: statusImageUrl)!, completionHandler: { (data, response, error) in
-//        if error != nil {
-//            print(error)
-//        }
-//        
-//        let image = UIImage(data: data!)
-//        
-//        dispatch_async(dispatch_get_main_queue(), {
-//            self.statusImageView.image = image
-//            self.loader.stopAnimating()
-//        })
-//        
-//        
-//    }).resume()
-//}
-
-
-
 class FeedCollectionViewCell: BaseCollectionViewCell {
     
     // MARK: - Properties
@@ -193,25 +142,17 @@ class FeedCollectionViewCell: BaseCollectionViewCell {
         
         addConstraintsWithFormat("H:|-2-[v0]-12-|", views: dividerLine)
         
-        
-        //
         addConstraintsWithFormat("H:|[v0(v2)][v1(v2)][v2]|", views: likeButton, commentButton, shareButton)
-        
-        
-        
-        
+
         addConstraintsWithFormat("V:|-12-[v0]", views: nameLabel)
         
         addConstraintsWithFormat("V:|-8-[v0(44)]-4-[v1]-4-[v2(200)]-8-[v3(24)]-8-[v4(0.7)][v5(44)]|", views: profileImageView, statusTextView, statusImageView, likesCommentsLabel, dividerLine, likeButton)
-        
         
         addConstraintsWithFormat("V:[v0(44)]|", views: commentButton)
         addConstraintsWithFormat("V:[v0(44)]|", views: shareButton)
         
         statusImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateStatusImageView)))
 
-        
-        
     }
     
     

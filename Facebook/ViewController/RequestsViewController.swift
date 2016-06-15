@@ -10,6 +10,11 @@ import UIKit
 
 class RequestsViewController: UITableViewController {
     
+    // MARK: - Properties
+    
+    
+    // MARK: - LyfeCicle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +35,8 @@ class RequestsViewController: UITableViewController {
         self.tableView.registerClass(RequestHeaderCell.self, forHeaderFooterViewReuseIdentifier: Constants.Storyboard.RequestHeaderCellID)
     }
     
+    
+    // MARK: - UITableViewDelegate
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
