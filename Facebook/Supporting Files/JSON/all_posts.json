@@ -1,0 +1,41 @@
+{
+    "posts": [
+              {
+              "name": "Bill Graham",
+              "location": {
+              "city": "San Francisco",
+              "state": "CA"
+              },
+              "profileImageName": "bill_profile",
+              "statusText": "Big. Bold. Beautiful. \nEverything you love is now even better with iOS 10, our biggest release yet. Express yourself in bold new ways in Messages. Find your route with beautifully redesigned Maps. Relive memories like never before in Photos. And use the power of Siri in more apps than ever. There’s so much to say about iOS 10 — here are just a few of our favorite things.",
+              "statusImageName": "iOS10",
+              "numLikes": 150,
+              "numComments": 300,
+              "information": "some information text"
+              },
+              {
+              "name": "Bill Graham",
+              "location": {
+              "city": "Cupertino",
+              "state": "CA"
+              },
+              "profileImageName": "bill_profile",
+              "statusText": "Just like you, Siri can do great new things on a Mac. \nTalk about big news. No matter what you’re working on, your favorite personal assistant is always a click away. The handy features of Siri on iOS are now on your Mac, along with brand-new ways to help you with the things you do every day on your desktop.",
+              "statusImageName": "OSXSiera",
+              "numLikes": 111,
+              "numComments": 222
+              },
+              {
+              "name": "Eddy Cue",
+              "location": {
+              "city": "Porbandar",
+              "state": "India"
+              },
+              "profileImageName": "eddy_profile",
+              "statusText": "Just like you, Siri can do great new things on a Mac. \nTalk about big news. No matter what you’re working on, your favorite personal assistant is always a click away. The handy features of Siri on iOS are now on your Mac, along with brand-new ways to help you with the things you do every day on your desktop.",
+              "statusImageName": "tvOS",
+              "numLikes": 333,
+              "numComments": 444
+              }
+              ]
+}
